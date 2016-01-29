@@ -1,0 +1,7 @@
+test:
+  container_name: test
+  privileged: yes
+  restart: always
+  build: .
+  volumes:
+   - ./tasks:/tasks
