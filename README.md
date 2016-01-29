@@ -1,6 +1,6 @@
 # CMS-Make
 
-A tool aimed to create a simpler way to tackle with the CMS platform, mainly intended for casual users.
+A Docker environment aimed to create a simpler way to tackle with the CMS platform, focusing on the tool **cmsMake**, mainly intended for task creators.
 
 ## Requisites
 
