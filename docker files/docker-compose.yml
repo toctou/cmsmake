@@ -1,7 +1,7 @@
-test:
-  container_name: test
+make:
+  container_name: make
   privileged: yes
   restart: always
-  build: .
+  build: /etc/cmsmake
   volumes:
    - ./tasks:/tasks

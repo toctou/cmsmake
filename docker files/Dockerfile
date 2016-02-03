@@ -6,7 +6,7 @@ ARG NO_PASCAL=0
 RUN apt-get update
 
 # Dependencies
-RUN apt-get -y install libpq-dev python2.7 python-dev libffi-dev libcups2-dev python-numpy
+RUN apt-get -y install python2.7 python-dev python-numpy libffi-dev libcups2-dev libpq-dev
 
 # Compilers (for supported languages)
 RUN apt-get -y install g++
