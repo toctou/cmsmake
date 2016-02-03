@@ -3,7 +3,6 @@
 echo "Preparing space..."
 
 rm -rf /etc/cmsmake
-mkdir /etc/cmsmake
 rm -f /usr/local/bin/cmsmk
 
 echo "Downloading files..."
