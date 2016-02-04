@@ -19,4 +19,4 @@ echo "Cleaning up..."
 rm -f install.sh
 
 echo -e "DONE\n"
-echo -e "Invoke the tool cmsMake by typing 'cmsmk'\n"
+echo -e "Invoke the tool cmsMake by typing 'cmsmk' (-h for help)\n"
