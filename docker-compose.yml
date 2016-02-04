@@ -1,7 +1,0 @@
-make:
-  container_name: make
-  privileged: yes
-  restart: always
-  build: .
-  volumes:
-   - ${cmsmkwd}:/root/tasks
