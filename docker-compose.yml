@@ -2,6 +2,6 @@ make:
   container_name: make
   privileged: yes
   restart: always
-  build: /etc/cmsmake/
+  build: .
   volumes:
-   - .:/tasks
+   - ${cmsmkwd}:/root/tasks

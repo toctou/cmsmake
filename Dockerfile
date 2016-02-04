@@ -18,8 +18,8 @@ RUN apt-get -y install git python-pip
 # Prepare for CMS
 RUN git clone --recursive https://github.com/cms-dev/cms.git /cms && cd /cms && pip install -r requirements.txt && ./prerequisites.py install --as-root --no-conf -y && python setup.py install
 
-CMD mkdir /tasks
+CMD mkdir /root/tasks
 
-WORKDIR /tasks
+WORKDIR /root/tasks
 
 CMD bash

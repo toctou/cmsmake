@@ -11,8 +11,8 @@ git clone -q https://github.com/toctou/cmsmake.git /etc/cmsmake
 
 echo "Setting up..."
 
-chmod +x /etc/cmsmake/scripts/cmsMakeStart.sh
-ln -s /etc/cmsmake/scripts/cmsMakeStart.sh /usr/local/bin/cmsmk
+chmod +x /etc/cmsmake/cmsMakeStart.sh
+ln -s /etc/cmsmake/cmsMakeStart.sh /usr/local/bin/cmsmk
 
 echo "Cleaning up..."
 
