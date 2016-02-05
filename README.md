@@ -4,15 +4,18 @@ A Docker environment aimed to create a simpler way to use the integrated tool **
 
 ## Requisites
 
-Before start, check that you have installed the following elements:
+Before start, check that you have installed the following element(s):
 
-* [docker](https://docs.docker.com/engine/installation/)
+[![Click here to download Docker](https://www.docker.com/sites/all/themes/docker/assets/images/logo.png "Click here to download Docker")](https://docs.docker.com/engine/installation/)
 
 ## Building and Running
 
-After successfully installed Docker, you may now download [this installation script](https://raw.githubusercontent.com/toctou/cmsmake/master/scripts/install.sh) somewhere and execute it by typing
+**WARNING**: If you're running Windows, the following commands should be typed into "Docker Quickstart Terminal".
+
+After successfully installed Docker, you may now download the installation script somewhere and execute it by typing
 
 ```sh
+$ curl -O -sS https://raw.githubusercontent.com/toctou/cmsmake/master/scripts/install.sh
 $ chmod +x install.sh
 $ sudo ./install.sh
 ```
@@ -23,7 +26,7 @@ Once installation terminates, installation file will delete itself, and you are 
 $ cmsMakeBuild
 ```
 
-WARNING: It may take a long time to complete (~30 mins).
+**WARNING**: It may take a long time to complete (~30 mins).
 
 After all that, the cms environment is ready.
 Place yourself in the folder of interest, which contains the tasks you want to work with (e.g. `/home/ioi/problems/`) and you can now finally enter the environment with the command
