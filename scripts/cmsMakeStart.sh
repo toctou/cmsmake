@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker run -it --privileged -v $(pwd):/root/tasks/ cmsmake bash
+docker run --rm -i -t -v $(pwd):/tasks/ -w /tasks/ --group-add cmsuser -u=$(id -u) cmsmake bash -l

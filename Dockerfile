@@ -24,8 +24,6 @@ RUN git clone --recursive https://github.com/cms-dev/cms.git /cms && cd /cms && 
 # Run aux custom commands
 RUN $CUSTOM
 
-CMD mkdir /root/tasks
+CMD mkdir /tasks
 
-WORKDIR /root/tasks
-
-CMD bash
+RUN echo -e "\n\n\n    You may now enter the cms environment by typing 'cmsMakeStart'\n\n"
