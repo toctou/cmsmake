@@ -2,20 +2,27 @@
 
 echo "Preparing space..."
 
-rm -rf /etc/cmsmake
-rm -f /usr/local/bin/cmsMakeBuild
-rm -f /usr/local/bin/cmsMakeStart
+CMSMAKEROOT=$HOME/cmsmake
+BINFOLDER=$HOME/bin
+
+mkdir -p $CMSMAKEROOT
+mkdir -p $BINFOLDER
+
+rm -rf $CMSMAKEROOT
+rm -f $BINFOLDER/cmsMakeBuild
+rm -f $BINFOLDER/cmsMakeStart
 
 echo "Downloading files..."
 
-git clone -q https://github.com/toctou/cmsmake.git /etc/cmsmake
+git clone -q https://github.com/toctou/cmsmake.git $CMSMAKEROOT
 
 echo "Setting up..."
 
-chmod +x /etc/cmsmake/scripts/cmsMakeBuild.sh
-chmod +x /etc/cmsmake/scripts/cmsMakeStart.sh
-ln -s /etc/cmsmake/scripts/cmsMakeBuild.sh /usr/local/bin/cmsMakeBuild
-ln -s /etc/cmsmake/scripts/cmsMakeStart.sh /usr/local/bin/cmsMakeStart
+chmod +x $CMSMAKEROOT/scripts/cmsMakeBuild.sh
+chmod +x $CMSMAKEROOT/scripts/cmsMakeStart.sh
+
+ln -s $CMSMAKEROOT/scripts/cmsMakeBuild.sh $BINFOLDER/cmsMakeBuild
+ln -s $CMSMAKEROOT/scripts/cmsMakeStart.sh $BINFOLDER/cmsMakeStart
 
 echo "Cleaning up..."
 

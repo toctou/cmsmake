@@ -26,4 +26,7 @@ RUN $CUSTOM
 
 CMD mkdir /tasks
 
+# Fix "I have no name!" prompt
+RUN echo 'PS1="$PWD $ "' >> /etc/profile
+
 RUN echo -e "\n\n\n    You may now enter the cms environment by typing 'cmsMakeStart'\n\n"
