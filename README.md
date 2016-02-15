@@ -10,14 +10,14 @@ Before start, check that you have installed the following element(s):
 
 ## Building and Running
 
-**WARNING**: If you're running Windows, the following commands should be typed into "Docker Quickstart Terminal".
+**WARNING**: If you're running Windows or Mac OS X, the following commands should be typed into "Docker Quickstart Terminal".
 
 After successfully installed Docker, you may now download the installation script somewhere and execute it by typing
 
 ```sh
 $ curl -O -sS https://raw.githubusercontent.com/toctou/cmsmake/master/scripts/install.sh
 $ chmod +x install.sh
-$ sudo ./install.sh
+$ ./install.sh
 ```
 
 Once installation terminates, installation file will delete itself, and you are ready to build the `cms` environment by typing
