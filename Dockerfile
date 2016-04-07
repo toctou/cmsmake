@@ -24,7 +24,7 @@ RUN git clone --recursive https://github.com/cms-dev/cms.git /cms && cd /cms && 
 # Run aux custom commands
 RUN $CUSTOM
 
-CMD mkdir /tasks
+CMD mkdir -p /tasks
 
 # Fix "I have no name!" prompt
 RUN echo 'PS1="$PWD $ "' >> /etc/profile
